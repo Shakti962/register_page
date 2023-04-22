@@ -14,14 +14,18 @@
         @tailwind base;
         @tailwind components;
         @tailwind utilities;
-
+        /*!***************ScrollBar**************************!*/
+        /* width */
+        ::-webkit-scrollbar {
+            display: none;
+        }
     </style>
     <title>Login Page</title>
 </head>
-<body class="font-[poppins] max-[769px]:bg-none bg-[url('images/background.png')] bg-left bg-contain bg-no-repeat">
-<div class="hidden place-content-center h-screen max-[769px]:grid">
-    <div class="text-xl font-semibold">Nothing To See Here. <br>Go To Desktop Mode.</div>
-</div>
+<body class="font-[poppins] max-[769px]:bg-none bg-[url('images/background.png')] bg-left bg-fixed bg-contain bg-no-repeat">
+    <div class="hidden place-content-center h-screen max-[769px]:grid">
+        <div class="text-xl font-semibold">Nothing To See Here. <br>Go To Desktop Mode.</div>
+    </div>
     <div class="max-[769px]:hidden">
         <div class="grid grid-cols-2 ml-24 my-8">
             <div>
