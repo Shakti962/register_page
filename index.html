@@ -22,103 +22,105 @@
     </style>
     <title>Login Page</title>
 </head>
-<body class="font-[poppins] max-[769px]:bg-none bg-[url('images/background.png')] bg-left bg-fixed bg-contain bg-no-repeat">
+<body class="font-[poppins]">
     <div class="hidden place-content-center h-screen max-[769px]:grid">
         <div class="text-xl font-semibold">Nothing To See Here. <br>Go To Desktop Mode.</div>
     </div>
-    <div class="grid place-content-center max-[769px]:hidden">
-        <div class="w-max h-screen">
-            <div class="grid grid-cols-2 my-6">
-                <div>
-                    <img class="w-56" src="images/logo.png" alt="logo">
-                </div>
-                <div class="flex justify-center space-x-20">
-                    <span class="text-[#4B4D8C] cursor-pointer grid content-center font-medium">Home</span>
-                    <span class="text-[#4B4D8C] cursor-pointer shadow-[1px_4px_20px_#0033FF50] my-8 px-5 rounded-3xl grid content-center font-medium">Sign in</span>
-                    <span class="text-[#023E8A] grid content-center font-semibold">Register <img class="w-6 mt-1 mx-5" src="images/icons/line.png"></span>
-                </div>
-            </div>
-            <div class="grid grid-cols-4 my-8">
-                <div class="col-span-2 mt-16">
-                    <h1 class="flex justify-center text-6xl font-semibold">Register <br> Account</h1>
-                    <h5 class="text-xl mt-6 text-center">Sign Up to create account</h5>
-                    <div class="text-xl text-center -ml-44">
-                        in <span class="text-[#4460F1] cursor-pointer">Forex .</span>
+    <div class="max-[769px]:hidden">
+        <div class="max-w-screen-2xl h-screen">
+            <div class="pt-4 bg-[url('images/background.png')] bg-contain bg-left-bottom bg-no-repeat">
+                <div class="grid grid-cols-2">
+                    <div class="grid content-center">
+                        <img class="w-56 ml-20" src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="flex justify-center space-x-20">
+                        <span class="text-[#4B4D8C] cursor-pointer grid content-center font-medium">Home</span>
+                        <span class="text-[#4B4D8C] cursor-pointer shadow-[1px_4px_20px_#0033FF50] my-8 px-5 rounded-3xl grid content-center font-medium">Sign in</span>
+                        <span class="text-[#023E8A] grid content-center font-semibold">Register <img class="w-6 mt-1 mx-5" src="images/icons/line.png"></span>
                     </div>
                 </div>
-                <div class="flex justify-end mx-2 text-sm">
-                    <div class="grid space-y-4">
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Refferral ID</p>
-                            <img class="absolute m-4 w-3" src="images/icons/copy.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter First Name">
-                        </label>
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Last Name</p>
-                            <img class="absolute m-4 w-3" src="images/icons/profile.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter Last Name">
-                        </label>
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Password</p>
-                            <img class="absolute ml-4 mt-3 w-3" src="images/icons/password.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="password" placeholder="Enter Password">
-                        </label>
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Mobile Number</p>
-                            <img class="absolute ml-4 mt-3 h-4" src="images/icons/mobile.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter Mobile Number">
-                        </label>
+                <div class="grid grid-cols-4 my-8">
+                    <div class="col-span-2 mt-16">
+                        <h1 class="flex justify-center text-6xl font-semibold">Register <br> Account</h1>
+                        <h5 class="text-xl mt-6 text-center">Sign Up to create account</h5>
+                        <div class="text-xl text-center -ml-44">
+                            in <span class="text-[#4460F1] cursor-pointer">Forex .</span>
+                        </div>
                     </div>
-                </div>
-                <div class="flex justify-start mx-2 text-sm">
-                    <div class="grid space-y-4">
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">First Name</p>
-                            <img class="absolute m-4 w-3" src="images/icons/profile.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter First Name">
-                        </label>
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Email</p>
-                            <img class="absolute m-4 w-[14px]" src="images/icons/mail.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="email" placeholder="Enter Email">
-                        </label>
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Country</p>
-                            <img class="absolute m-4 w-4" src="images/icons/language.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Select Your Country">
-                        </label>
-                        <label>
-                            <p class="ml-4 text-[#023E8A]">Birth Date</p>
-                            <img class="absolute m-4 w-4" src="images/icons/date.svg" alt="icon">
-                            <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Select Date">
-                        </label>
-                    </div>
-                </div>
-                <div class="flex justify-center col-start-3 mt-6 col-span-2">
-                    <div>
-                        <div class="border-2 p-2 rounded-md">
+                    <div class="flex justify-end mx-2 text-sm">
+                        <div class="grid space-y-4">
                             <label>
-                                <input class="absolute scale-125 m-[6px] cursor-pointer" type="checkbox">
-                                <span class="text-[11px] ml-8 text-gray-600">I'm not a robot</span>
-                                <img class="inline w-6 ml-8 mr-2" src="images/icons/not-robot.svg" alt="icon">
+                                <p class="ml-4 text-[#023E8A]">Refferral ID</p>
+                                <img class="absolute m-4 w-3" src="images/icons/copy.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter First Name">
+                            </label>
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">Last Name</p>
+                                <img class="absolute m-4 w-3" src="images/icons/profile.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter Last Name">
+                            </label>
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">Password</p>
+                                <img class="absolute ml-4 mt-3 w-3" src="images/icons/password.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="password" placeholder="Enter Password">
+                            </label>
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">Mobile Number</p>
+                                <img class="absolute ml-4 mt-3 h-4" src="images/icons/mobile.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter Mobile Number">
                             </label>
                         </div>
                     </div>
-                </div>
-                <div class="flex justify-center col-start-3 mt-2 col-span-2">
-                    <label>
-                        <input class="absolute m-[6px] cursor-pointer" type="checkbox">
-                        <span class="text-xs ml-8">I accept the <span class="text-[#4460F1] font-medium cursor-pointer">TERMS & CONDITIONS</span></span>
-                    </label>
-                </div>
-                <div class="flex justify-center col-start-3 mt-4 col-span-2">
-                    <button class="bg-[#4460F1] text-white p-2 w-72 rounded-xl shadow-xl shadow-[#4460F160]">Register</button>
-                </div>
-                <div class="col-span-2 mt-9">
-                    <p class="text-xs text-gray-500">© 2023 . Crafted with <img class="inline" src="images/icons/heart.svg" alt="icon"> by Shakti Singh.</p>
-                </div>
-                <div class="text-center mt-4 col-span-2">
-                    <p class="text-xs text-gray-500">Already have an account ? <span class="text-[#4460F1] font-semibold cursor-pointer">Log In</span></p>
+                    <div class="flex justify-start mx-2 text-sm">
+                        <div class="grid space-y-4">
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">First Name</p>
+                                <img class="absolute m-4 w-3" src="images/icons/profile.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter First Name">
+                            </label>
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">Email</p>
+                                <img class="absolute m-4 w-[14px]" src="images/icons/mail.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="email" placeholder="Enter Email">
+                            </label>
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">Country</p>
+                                <img class="absolute m-4 w-4" src="images/icons/language.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Select Your Country">
+                            </label>
+                            <label>
+                                <p class="ml-4 text-[#023E8A]">Birth Date</p>
+                                <img class="absolute m-4 w-4" src="images/icons/date.svg" alt="icon">
+                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Select Date">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex justify-center col-start-3 mt-6 col-span-2">
+                        <div>
+                            <div class="border-2 p-2 rounded-md">
+                                <label>
+                                    <input class="absolute scale-125 m-[6px] cursor-pointer" type="checkbox">
+                                    <span class="text-[11px] ml-8 text-gray-600">I'm not a robot</span>
+                                    <img class="inline w-6 ml-8 mr-2" src="images/icons/not-robot.svg" alt="icon">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center col-start-3 mt-2 col-span-2">
+                        <label>
+                            <input class="absolute m-[6px] cursor-pointer" type="checkbox">
+                            <span class="text-xs ml-8">I accept the <span class="text-[#4460F1] font-medium cursor-pointer">TERMS & CONDITIONS</span></span>
+                        </label>
+                    </div>
+                    <div class="flex justify-center col-start-3 mt-4 col-span-2">
+                        <button class="bg-[#4460F1] text-white p-2 w-72 rounded-xl shadow-xl shadow-[#4460F160]">Register</button>
+                    </div>
+                    <div class="col-span-2 ml-20 mt-10">
+                        <p class="text-xs text-gray-500">© 2023 . Crafted with <img class="inline" src="images/icons/heart.svg" alt="icon"> by Shakti Singh.</p>
+                    </div>
+                    <div class="text-center mt-4 col-span-2">
+                        <p class="text-xs text-gray-500">Already have an account ? <span class="text-[#4460F1] font-semibold cursor-pointer">Log In</span></p>
+                    </div>
                 </div>
             </div>
         </div>
