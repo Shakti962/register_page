@@ -14,6 +14,14 @@
         @tailwind base;
         @tailwind components;
         @tailwind utilities;
+        @layer components {
+            .input-label{
+                @apply ml-4 text-[#023E8A];
+            }
+            .input-style {
+                @apply font-medium placeholder:text-[13px] p-3 rounded-xl pl-12 w-60 max-xl:w-52 max-md:w-full bg-[#D9E7F8] outline-[#023E8A80];
+            }
+        }
         /*!***************ScrollBar**************************!*/
         /* width */
         ::-webkit-scrollbar {
@@ -23,103 +31,105 @@
     <title>Login Page</title>
 </head>
 <body class="font-[poppins]">
-    <div class="hidden place-content-center h-screen max-[769px]:grid">
-        <div class="text-xl font-semibold">Nothing To See Here. <br>Go To Desktop Mode.</div>
-    </div>
-    <div class="max-[769px]:hidden">
+<!--    <div class="hidden place-content-center h-screen max-[769px]:grid">-->
+<!--        <div class="text-xl font-semibold">Nothing To See Here. <br>Go To Desktop Mode.</div>-->
+<!--    </div>-->
+    <div class="">
         <div class="max-w-screen-2xl h-screen">
-            <div class="pt-4 bg-[url('images/background.png')] bg-contain bg-left-bottom bg-no-repeat">
+            <div class="pt-4 bg-[url('images/background.png')] max-lg:bg-none bg-contain bg-left-bottom bg-no-repeat">
                 <div class="grid grid-cols-2">
-                    <div class="grid content-center">
-                        <img class="w-56 ml-20" src="images/logo.png" alt="logo">
+                    <div class="max-md:col-span-2 max-md:flex max-md:justify-center">
+                        <img class="max-lg:w-36 max-lg:mt-4 w-56 ml-20 max-md:ml-0" src="images/logo.png" alt="logo">
                     </div>
-                    <div class="flex justify-center space-x-20">
+                    <div class="flex justify-center space-x-20 max-lg:space-x-14 max-md:hidden">
                         <span class="text-[#4B4D8C] cursor-pointer grid content-center font-medium">Home</span>
-                        <span class="text-[#4B4D8C] cursor-pointer shadow-[1px_4px_20px_#0033FF50] my-8 px-5 rounded-3xl grid content-center font-medium">Sign in</span>
+                        <span class="text-[#4B4D8C] cursor-pointer shadow-[1px_4px_20px_#0033FF50] my-8 px-5 rounded-3xl grid content-center font-medium max-lg:py-2">Sign in</span>
                         <span class="text-[#023E8A] grid content-center font-semibold">Register <img class="w-6 mt-1 mx-5" src="images/icons/line.png"></span>
                     </div>
                 </div>
-                <div class="grid grid-cols-4 my-8">
-                    <div class="col-span-2 mt-16">
-                        <h1 class="flex justify-center text-6xl font-semibold">Register <br> Account</h1>
-                        <h5 class="text-xl mt-6 text-center">Sign Up to create account</h5>
-                        <div class="text-xl text-center -ml-44">
+                <div class="grid grid-cols-4 my-8 max-lg:grid-cols-3" >
+                    <div class="col-span-2 mt-16 max-lg:col-span-1 max-md:col-span-4 max-md:mt-0">
+                        <h1 class="flex justify-center text-6xl font-semibold max-lg:text-5xl max-md:text-2xl">Register <br> Account</h1>
+                        <h5 class="text-xl mt-6 text-center max-lg:text-md max-md:text-sm max-md:mt-0">Sign Up to create account</h5>
+                        <div class="text-xl text-center -ml-44 max-lg:text-md max-lg:ml-0 max-md:text-sm">
                             in <span class="text-[#4460F1] cursor-pointer">Forex .</span>
                         </div>
                     </div>
-                    <div class="flex justify-end mx-2 text-sm">
+                    <div class="flex justify-end mx-2 text-sm max-md:col-span-4 max-md:justify-center max-md:mt-6">
                         <div class="grid space-y-4">
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Refferral ID</p>
+                                <p class="input-label">Refferral ID</p>
                                 <img class="absolute m-4 w-3" src="images/icons/copy.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter First Name">
+                                <input class="input-style" type="text" value="TB956631" placeholder="Enter First Name">
                             </label>
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Last Name</p>
+                                <p class="input-label">Last Name</p>
                                 <img class="absolute m-4 w-3" src="images/icons/profile.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter Last Name">
+                                <input class="input-style" type="text" placeholder="Enter Last Name">
                             </label>
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Password</p>
+                                <p class="input-label">Password</p>
                                 <img class="absolute ml-4 mt-3 w-3" src="images/icons/password.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="password" placeholder="Enter Password">
+                                <input class="input-style" type="password" placeholder="Enter Password">
                             </label>
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Mobile Number</p>
+                                <p class="input-label">Mobile Number</p>
                                 <img class="absolute ml-4 mt-3 h-4" src="images/icons/mobile.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter Mobile Number">
+                                <input class="input-style" type="text" placeholder="Enter Mobile Number">
                             </label>
                         </div>
                     </div>
-                    <div class="flex justify-start mx-2 text-sm">
+                    <div class="flex justify-start mx-2 max-lg: text-sm max-md:col-span-4 max-md:justify-center">
                         <div class="grid space-y-4">
                             <label>
-                                <p class="ml-4 text-[#023E8A]">First Name</p>
+                                <p class="input-label">First Name</p>
                                 <img class="absolute m-4 w-3" src="images/icons/profile.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Enter First Name">
+                                <input class="input-style" type="text" placeholder="Enter First Name">
                             </label>
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Email</p>
+                                <p class="input-label">Email</p>
                                 <img class="absolute m-4 w-[14px]" src="images/icons/mail.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="email" placeholder="Enter Email">
+                                <input class="input-style" type="email" placeholder="Enter Email">
                             </label>
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Country</p>
+                                <p class="input-label">Country</p>
                                 <img class="absolute m-4 w-4" src="images/icons/language.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Select Your Country">
+                                <input class="input-style" type="text" placeholder="Select Your Country">
                             </label>
                             <label>
-                                <p class="ml-4 text-[#023E8A]">Birth Date</p>
+                                <p class="input-label">Birth Date</p>
                                 <img class="absolute m-4 w-4" src="images/icons/date.svg" alt="icon">
-                                <input class="p-3 rounded-xl pl-12 w-60 bg-[#D9E7F8] outline-[#023E8A80]" type="text" placeholder="Select Date">
+                                <input class="input-style" type="text" placeholder="Select Date">
                             </label>
                         </div>
                     </div>
-                    <div class="flex justify-center col-start-3 mt-6 col-span-2">
-                        <div>
-                            <div class="border-2 p-2 rounded-md">
-                                <label>
-                                    <input class="absolute scale-125 m-[6px] cursor-pointer" type="checkbox">
-                                    <span class="text-[11px] ml-8 text-gray-600">I'm not a robot</span>
-                                    <img class="inline w-6 ml-8 mr-2" src="images/icons/not-robot.svg" alt="icon">
-                                </label>
+                    <div class=" col-span-2 col-start-3 max-lg:col-start-2 max-md:col-span-4">
+                        <div class="flex justify-center col-start-3 mt-6 col-span-2">
+                            <div>
+                                <div class="border-2 p-2 bg-gray-100 rounded-md">
+                                    <label>
+                                        <input class="absolute scale-125 m-[6px] cursor-pointer" type="checkbox">
+                                        <span class="text-[11px] ml-8 text-gray-600">I'm not a robot</span>
+                                        <img class="inline w-6 ml-8 mr-2" src="images/icons/not-robot.svg" alt="icon">
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <div class="flex justify-center col-start-3 mt-2 col-span-2">
+                            <label>
+                                <input class="absolute m-[6px] cursor-pointer" type="checkbox">
+                                <span class="text-xs ml-8">I accept the <span class="text-[#4460F1] font-medium cursor-pointer">TERMS & CONDITIONS</span></span>
+                            </label>
+                        </div>
+                        <div class="flex justify-center col-start-3 mt-4 col-span-2">
+                            <button class="bg-[#4460F1] text-white p-2 w-72 max-lg:w-60 rounded-xl shadow-xl shadow-[#4460F160]">Register</button>
+                        </div>
+                        <div class="text-center mt-4 col-span-2">
+                            <p class="text-xs text-gray-500">Already have an account ? <span class="text-[#4460F1] font-semibold cursor-pointer">Log In</span></p>
+                        </div>
                     </div>
-                    <div class="flex justify-center col-start-3 mt-2 col-span-2">
-                        <label>
-                            <input class="absolute m-[6px] cursor-pointer" type="checkbox">
-                            <span class="text-xs ml-8">I accept the <span class="text-[#4460F1] font-medium cursor-pointer">TERMS & CONDITIONS</span></span>
-                        </label>
-                    </div>
-                    <div class="flex justify-center col-start-3 mt-4 col-span-2">
-                        <button class="bg-[#4460F1] text-white p-2 w-72 rounded-xl shadow-xl shadow-[#4460F160]">Register</button>
-                    </div>
-                    <div class="col-span-2 ml-20 mt-10">
+                    <div class="col-span-2 ml-20 max-md:ml-0 max-md:text-center max-md:col-span-4 max-md:mt-6 max-md:mb-2">
                         <p class="text-xs text-gray-500">© 2023 . Crafted with <img class="inline" src="images/icons/heart.svg" alt="icon"> by Shakti Singh.</p>
-                    </div>
-                    <div class="text-center mt-4 col-span-2">
-                        <p class="text-xs text-gray-500">Already have an account ? <span class="text-[#4460F1] font-semibold cursor-pointer">Log In</span></p>
                     </div>
                 </div>
             </div>
